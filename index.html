@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fix Kirka.io Petition</title>
+    <style>
+        @font-face {
+            font-family: 'Exo';
+            src: url('exo.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Exo';
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #202639;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            font-size: 16px; /* Base font size for better scaling */
+        }
+
+        header {
+            background: linear-gradient(90deg, #2f3957, #37477c);
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+            border: 4px solid #3e4d7c;
+            border-bottom: solid 4px #26335b;
+            border-top: 4px solid #4d5c8b;
+        }
+
+        main {
+            height: 100vh;
+            flex: 1;
+            padding: 1rem 0.5rem; /* Adjust padding for smaller screens */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #26335b, #3b4975);
+            border: 4px solid #3e4d7c;
+            border-bottom: solid 4px #26335b;
+            border-top: 4px solid #4d5c8b;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        a {
+            background-color: #ffb914;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 30px !important;
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-right: 7px;
+            width: auto; /* Allow buttons to adjust width dynamically */
+            max-width: 90%; /* Limit button width on smaller screens */
+            box-shadow: 0 5.47651px 0 rgba(0, 0, 0, .5) !important;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 3px 1px rgba(0, 0, 0, .486) !important;
+            font-weight: 600;
+            font-style: italic;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            position: relative;
+            font-size: 1rem; /* Adjust font size for readability */
+            transition: all .3s ease;
+            padding: .9em 1.4em;
+            transform: skew(-10deg);
+            font-weight: 900;
+            overflow: hidden;
+            text-transform: uppercase;
+            border-radius: .2em;
+            outline: none;
+            text-shadow: 0 .1em 0 #000;
+            -webkit-text-stroke: 1px var(--black);
+            box-shadow: 0 .15rem 0 rgba(0, 0, 0, .315);
+            cursor: pointer;
+            border-top: #fcd373 0.2em solid;
+            border-bottom: #b6830e 0.2em solid;
+        }
+
+        a:hover {
+            color: #ffffff;
+            background-color: #fcd373;
+        }
+
+        .dif {
+            color: #ffb914; /* Different color for .dif links */
+            text-decoration: underline; /* Underline for differentiation */
+            font-weight: normal; /* Normal font weight */
+            font-size: 1rem; /* Adjust font size */
+            background: none; /* Remove background */
+            padding: 0; /* Remove padding */
+            margin: 0; /* Remove margin */
+            box-shadow: none; /* Remove box shadow */
+            border: none;
+        }
+
+        .dif:hover {
+            color: #fcd373; /* Hover effect for .dif links */
+            text-decoration: none; /* Remove underline on hover */
+        }
+
+        header h1,
+        header p,
+        main p,
+        footer p {
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+
+        h1,
+        h2 {
+            font-size: 2rem; /* Reduce font size for smaller screens */
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px; /* Further reduce font size for smaller devices */
+            }
+
+            h1,
+            h2 {
+                font-size: 1.5rem; /* Adjust heading sizes for mobile */
+            }
+
+            a {
+                padding: 0.7em 1em; /* Adjust button padding for smaller screens */
+            }
+        }
+
+        .user-messages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .user-message {
+            background: #2f3957;
+            border: 2px solid #4d5c8b;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            color: #ffffff;
+            text-align: left;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .user-message h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+
+        .user-message p {
+            margin: 0.2rem 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Fix Kirka.io Petition</h1>
+    </header>
+    <main>
+        <h2>Sign the Petition</h2>
+        <p>Help us make Kirka.io a better place by signing this petition to address the issue of cheaters in the game.
+        </p>
+        <div class="info">
+            <p>Please sign the petition by visiting the following link:</p>
+            <p><a href="https://forms.gle/E6Svn88LBanaVsZ67" target="_blank">Sign the Petition Here</a></p>
+        </div>
+        <div class="user-messages">
+            <div class="user-message">
+                <h3>Username: daymian</h3>
+                <a class="dif" href="https://kirka.io/profile/RX1J29"><p>Username: #RX1J29</p></a>
+                <p>Message: "SIGN THE FORM TO GET YOUR MESSAGE OUT!"</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Thank you for supporting the Kirka.io community!</p>
+    </footer>
+</body>
+
+</html>
