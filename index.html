@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fix Kirka.io Petition</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='7' y='6' width='18' height='22' rx='3' fill='%23ffb914' stroke='%233e4d7c' stroke-width='2'/%3E%3Crect x='11' y='2' width='10' height='6' rx='2' fill='%23fff' stroke='%233e4d7c' stroke-width='2'/%3E%3C/svg%3E">
     <style>
         @font-face {
             font-family: 'Exo';
@@ -24,7 +25,8 @@
             flex-direction: column;
             min-height: 100vh;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-            font-size: 16px; /* Base font size for better scaling */
+            font-size: 16px;
+            /* Base font size for better scaling */
         }
 
         header {
@@ -40,7 +42,8 @@
         main {
             height: 100vh;
             flex: 1;
-            padding: 1rem 0.5rem; /* Adjust padding for smaller screens */
+            padding: 1rem 0.5rem;
+            /* Adjust padding for smaller screens */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -57,6 +60,7 @@
             text-align: center;
             padding: 1rem 0;
             box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 1em;
         }
 
         a {
@@ -68,8 +72,8 @@
             margin-top: 5px;
             margin-left: 10px;
             margin-right: 7px;
-            width: auto; /* Allow buttons to adjust width dynamically */
-            max-width: 90%; /* Limit button width on smaller screens */
+            width: auto;
+            max-width: 90%;
             box-shadow: 0 5.47651px 0 rgba(0, 0, 0, .5) !important;
             text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 0 3px 1px rgba(0, 0, 0, .486) !important;
             font-weight: 600;
@@ -79,7 +83,7 @@
             align-items: center;
             border: none;
             position: relative;
-            font-size: 1rem; /* Adjust font size for readability */
+            font-size: 1rem;
             transition: all .3s ease;
             padding: .9em 1.4em;
             transform: skew(-10deg);
@@ -102,20 +106,46 @@
         }
 
         .dif {
-            color: #ffb914; /* Different color for .dif links */
-            text-decoration: underline; /* Underline for differentiation */
-            font-weight: normal; /* Normal font weight */
-            font-size: 1rem; /* Adjust font size */
-            background: none; /* Remove background */
-            padding: 0; /* Remove padding */
-            margin: 0; /* Remove margin */
-            box-shadow: none; /* Remove box shadow */
+            color: #ffb914;
+            text-decoration: underline;
+            font-weight: normal;
+            font-size: 1rem;
+            background: none;
+            padding: 0;
+            margin: 0;
+            box-shadow: none;
             border: none;
+            margin-bottom: 0.5em;
         }
 
         .dif:hover {
-            color: #fcd373; /* Hover effect for .dif links */
-            text-decoration: none; /* Remove underline on hover */
+            color: #fcd373;
+            text-decoration: none;
+            background: none;
+            border: none;
+        }
+
+        /* Style for the footer link */
+        .footerlink {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            background: none;
+            color: #ffffff;
+            border-radius: 0;
+            font-weight: 500;
+            text-decoration: underline;
+            box-shadow: none;
+            transition: color 0.2s;
+            cursor: pointer;
+            border: none;
+            font-style: normal;
+        }
+        .footerlink:hover {
+            color: #fcd373;
+            background: none;
+            text-decoration: underline;
+            transform: none;
         }
 
         header h1,
@@ -127,22 +157,26 @@
 
         h1,
         h2 {
-            font-size: 2rem; /* Reduce font size for smaller screens */
+            font-size: 2rem;
+            /* Reduce font size for smaller screens */
             margin: 0;
         }
 
         @media (max-width: 768px) {
             body {
-                font-size: 14px; /* Further reduce font size for smaller devices */
+                font-size: 14px;
+                /* Further reduce font size for smaller devices */
             }
 
             h1,
             h2 {
-                font-size: 1.5rem; /* Adjust heading sizes for mobile */
+                font-size: 1.5rem;
+                /* Adjust heading sizes for mobile */
             }
 
             a {
-                padding: 0.7em 1em; /* Adjust button padding for smaller screens */
+                padding: 0.7em 1em;
+                /* Adjust button padding for smaller screens */
             }
         }
 
@@ -182,7 +216,9 @@
         <h1>Fix Kirka.io Petition</h1>
     </header>
     <main>
-        <h2>Sign the Petition</h2>
+        <h2>Sign the Petition with</h2>
+        <h1 style="color: #ffb914; font-size: 6em;">8</h1>
+        <h2>Other People</h2>
         <p>Help us make Kirka.io a better place by signing this petition to address the issue of cheaters in the game.
         </p>
         <div class="info">
@@ -192,13 +228,77 @@
         <div class="user-messages">
             <div class="user-message">
                 <h3>Username: daymian</h3>
-                <a class="dif" href="https://kirka.io/profile/RX1J29"><p>Username: #RX1J29</p></a>
+                <a class="dif" href="https://kirka.io/profile/RX1J29">
+                    <p>Profile: #RX1J29</p>
+                </a>
                 <p>Message: "SIGN THE FORM TO GET YOUR MESSAGE OUT!"</p>
+            </div>
+            <div class="user-message">
+                <h3>Username: clean</h3>
+                <a class="dif" href="https://kirka.io/profile/T57L43">
+                    <p>Profile: #T57L43</p>
+                </a>
+                <p>Message: "this community just fucking sucks bro"</p>
+            </div>
+            <div class="user-message">
+                <h3>Username: NRGEnderman</h3>
+                <a class="dif" href="https://kirka.io/profile/U4VS5X">
+                    <p>Profile: #U4VS5X</p>
+                </a>
+                <p>Message: "bro they need to fix the fucking movement and the fucking hackers and plzz add warzone like
+                    plz make a update"</p>
+            </div>
+            <div class="user-message">
+                <h3>Username: Sheep</h3>
+                <a class="dif" href="https://kirka.io/profile/9XNQTZ">
+                    <p>Profile: #9XNQTZ</p>
+                </a>
+                <p>Message: "I honestly used to enjoy playing Kirka, as every game felt fun and genuine, and improving
+                    my aim felt "worth it". However, as of recent, the game is unbearably annoying to play at times,
+                    with the amount of cheaters, people defending said cheaters, and lack of updates. I have no
+                    motivation to improve in nor grind this game, as it feels like this game has just become forgotten.
+                    It blows my mind that numerous people in top clans are able to get away with freely cheating while
+                    xip fails to even address the situation.
+                    <br>
+                    FIX KIRKA
+                    "
+                </p>
+            </div>
+            <div class="user-message">
+                <h3>Username: slicer.</h3>
+                <a class="dif" href="https://kirka.io/profile/ICR014">
+                    <p>Profile: #ICR014</p>
+                </a>
+                <p>Message: "Games been on the downhill since the start of year and shits only getting worse &#x2639;"</p>
+            </div>
+            <div class="user-message">
+                <h3>Username: irrvlo</h3>
+                <a class="dif" href="https://kirka.io/profile/H8N3U4">
+                    <p>Profile: #H8N3U4</p>
+                </a>
+                <p>Message: N/A</p>
+            </div>
+            <div class="user-message">
+                <h3>Username: PVT.Parts</h3>
+                <a class="dif" href="https://kirka.io/profile/VFSFIV">
+                    <p>Profile: #VFSFIV</p>
+                </a>
+                <p>Message: "This Xip guy needs to pull his finger out his ass and start fixing the game. Not one person
+                    is happy with the current state of the game and that alone should be enough to be sprung into
+                    action.He clearly does not care and hasn’t for a long time.Just do better, shits sad man"</p>
+            </div>
+            <div class="user-message">
+                <h3>Username: strawberrie</h3>
+                <a class="dif" href="https://kirka.io/profile/V4USTT">
+                    <p>Profile: #V4USTT</p>
+                </a>
+                <p>Message: "#MAKEKIRKAGREATAGAIN"</p>
             </div>
         </div>
     </main>
     <footer>
         <p>Thank you for supporting the Kirka.io community!</p>
+        <a href="https://youtu.be/4o2HOPbRcnE?si=IsAwEIghC0EPE-nB" class="footerlink" target="_blank">Watch this video for why...</a>
     </footer>
 </body>
 
